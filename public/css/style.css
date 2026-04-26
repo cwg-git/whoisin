@@ -489,6 +489,73 @@ footer p, footer a{color:#eee;}
 .mec-wrap .mec-simple-checkboxes-search ul li label {font-family: 'GT Walsheim Pro'; font-weight:500;font-size: 15px;color: #373737;margin-bottom: 0;}
 
 
+.thisweek .mec-calendar.mec-calendar-daily .mec-calendar-a-month h4{width:100%; border-top:none;}
+.thisweek .mec-load-month-link svg{margin-left:0 !important;}
+.thisweek .mec-month-navigator button{padding:0 !important; margin:0 !important;}
+.thisweek .mec-month-navigator button svg{margin-left:0 !important;}
+
+
+
+/*map css*/
+/* Sidebar */
+.map-block{position:relative; display: flex; overflow: hidden; box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; border: 10px solid #fff;}
+.map-block #sidebar {width: 300px;background: #fafafa;border-right: 1px solid #ccc;padding: 20px;position: absolute;left: 0px;top: 0;height: 100%;overflow-y: auto;transition: all 0.3s ease;z-index: 600;}
+.map-block #sidebar.active { left: 0; }
+.map-block #sidebar .category{border-bottom:1px solid rgba(0,0,0,.1); padding:0 0 13px; margin:0 0 10px;}
+.map-block #sidebar .map-category .category:last-child{border:none; padding:0;}
+.map-block #sidebar .category .category-heading{display:flex; align-items:center; gap:10px;}
+.map-block #sidebar .category label{font-size:18px; line-height:20px;}
+.map-block #sidebar .category .item-toggle{display:flex; margin-top:15px; gap:10px;}
+.map-block #closeSidebar {background: var(--e-global-color-primary);color: white;border: none;padding: 8px 12px;margin-bottom: 15px;float: right;cursor: pointer;border-radius: 50%;}
+.map-block #closeSidebar:hover {background: var(--e-global-color-secondary);}
+.map-block #map {flex: 1;height: 500px;width: 100vw;}
+.map-block .filter-title {margin-top: 20px; font-size:20px; line-height:22px; font-weight: bold;border-bottom: 1px solid #ccc;padding-bottom: 5px; margin-bottom:15px;}
+.map-block .category { margin: 10px 0; }
+.map-block .leaflet-top.leaflet-left { display: none; }
+.map-block .leaflet-top.leaflet-right { display: block; }
+.map-block button{font-size: 16px;line-height: 18px;color: #fff;background: #B12129;padding: 10px 44px 10px 40px;border-radius: 35px;border: none;transition: ease-in-out all 300ms;font-weight: 500;}
+.map-block button:hover{background: #000;}
+.map-block .category ul {list-style: none;padding-left: 15px;margin:0;}
+.map-block .category li {cursor: pointer; position: relative; padding: 10px 20px; font-size: 16px; line-height:18px; color: #7a7a7a;}
+.map-block .category li:before{content: "";position: absolute;top: 16px;left: 0;right: 0;background: #B12129;width: 5px;height: 5px;}
+.map-block .category li:after{content: "";position: absolute;top: 28px;left: 2px;right: 0;background: rgba(0,0,0,.2);width: 1px;height: 20px;}
+.map-block .category ul li:last-child:after{display:none;}
+.map-block .category li:hover {color:#B12129;}
+/* Red checkboxes */
+.map-block .category input[type="checkbox"] {accent-color: var(--e-global-color-primary); /* red */ width:17px; height:17px;}
+/* Dropdown arrow */
+.dropdown-toggle {cursor: pointer;font-size: 14px;margin-left: 6px;user-select: none;}
+.dropdown-toggle::after {display:none;}
+/* Collapsed list */
+.category ul.collapsed li:nth-child(n+11) {display: none;}
+.map-block #details h3{font-size:22px;}
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--e-global-color-secondary); /* red */
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--e-global-color-secondary);
+}
+.map-block #sidebar{
+  scrollbar-width: thin;
+  scrollbar-color: var(--e-global-color-secondary) #f1f1f1;
+}
 
 /*____________________________________________
                 Media Quaries 
