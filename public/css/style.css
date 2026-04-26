@@ -205,7 +205,7 @@ html { overflow-x:hidden;
 
 .post-categories.map-categories{padding-top:0;}
 .post-categories.map-categories .btn span{padding:20px 35px 20px 58px;}
-.post-categories.map-categories .col-md-4:nth-child(1) .btn span{background: url(../images/water.png) no-repeat 15px, url(../images/button-circle-bg.png) no-repeat 95%;}
+/* .post-categories.map-categories .col-md-4:nth-child(1) .btn span{background: url(../images/water.png) no-repeat 15px, url(../images/button-circle-bg.png) no-repeat 95%;}
 .post-categories.map-categories .col-md-4:nth-child(2) .btn span{background: url(../images/Nature.png) no-repeat 15px, url(../images/button-circle-bg.png) no-repeat 95%;}
 .post-categories.map-categories .col-md-4:nth-child(3) .btn span{background: url(../images/Prehistory.png) no-repeat 15px, url(../images/button-circle-bg.png) no-repeat 95%;}
 .post-categories.map-categories .col-md-4:nth-child(4) .btn span{background: url(../images/Phoenicia-Canaan.png) no-repeat 15px, url(../images/button-circle-bg.png) no-repeat 95%;}
@@ -213,7 +213,7 @@ html { overflow-x:hidden;
 .post-categories.map-categories .col-md-4:nth-child(6) .btn span{background: url(../images/Hellenistic.png) no-repeat 15px, url(../images/button-circle-bg.png) no-repeat 95%;}
 .post-categories.map-categories .col-md-4:nth-child(7) .btn span{background: url(../images/Religion.png) no-repeat 15px, url(../images/button-circle-bg.png) no-repeat 95%;}
 .post-categories.map-categories .col-md-4:nth-child(8) .btn span{background: url(../images/Cuisine-Culture.png) no-repeat 15px, url(../images/button-circle-bg.png) no-repeat 95%;}
-.post-categories.map-categories .col-md-4:nth-child(9) .btn span{background: url(../images/Museums.png) no-repeat 15px, url(../images/button-circle-bg.png) no-repeat 95%;}
+.post-categories.map-categories .col-md-4:nth-child(9) .btn span{background: url(../images/Museums.png) no-repeat 15px, url(../images/button-circle-bg.png) no-repeat 95%;} */
 
 /*================ Legacy Start ============== */
 .legacy-block{padding:100px 0px 100px 0px; background:#fff6ec;}
