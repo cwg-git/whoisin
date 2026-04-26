@@ -513,14 +513,14 @@ footer p, footer a{color:#eee;}
 .map-block .category { margin: 10px 0; }
 .map-block .leaflet-top.leaflet-left { display: none; }
 .map-block .leaflet-top.leaflet-right { display: block; }
-.map-block button{font-size: 16px;line-height: 18px;color: #fff;background: #B12129;padding: 10px 44px 10px 40px;border-radius: 35px;border: none;transition: ease-in-out all 300ms;font-weight: 500;}
+.map-block button{font-size: 16px;line-height: 18px;color: #fff;background: var(--e-global-color-primary);padding: 10px 44px 10px 40px;border-radius: 35px;border: none;transition: ease-in-out all 300ms;font-weight: 500;}
 .map-block button:hover{background: #000;}
 .map-block .category ul {list-style: none;padding-left: 15px;margin:0;}
 .map-block .category li {cursor: pointer; position: relative; padding: 10px 20px; font-size: 16px; line-height:18px; color: #7a7a7a;}
-.map-block .category li:before{content: "";position: absolute;top: 16px;left: 0;right: 0;background: #B12129;width: 5px;height: 5px;}
+.map-block .category li:before{content: "";position: absolute;top: 16px;left: 0;right: 0;background: var(--e-global-color-primary);width: 5px;height: 5px;}
 .map-block .category li:after{content: "";position: absolute;top: 28px;left: 2px;right: 0;background: rgba(0,0,0,.2);width: 1px;height: 20px;}
 .map-block .category ul li:last-child:after{display:none;}
-.map-block .category li:hover {color:#B12129;}
+.map-block .category li:hover {color:var(--e-global-color-primary);}
 /* Red checkboxes */
 .map-block .category input[type="checkbox"] {accent-color: var(--e-global-color-primary); /* red */ width:17px; height:17px;}
 /* Dropdown arrow */
