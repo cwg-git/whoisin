@@ -47,7 +47,7 @@ font-weight:500;
     color: inherit;
     /* margin-top: -14px; */
 }
-.nav-arrow{width: 45px;height: 45px;border-radius:50%;border:1px solid #ddd;background:white;cursor:pointer;font-size: 27px;color: #a81010;}
+.nav-arrow{width: 45px;height: 45px;border-radius:50%;border:1px solid #ddd;background:white;cursor:pointer;font-size: 27px;color: var(--e-global-color-primary);}
 
 /* WEEK DAYS */
 
@@ -64,7 +64,7 @@ border-bottom:1px solid #eee;
 
 /* DATE BLOCK */
 
-.event-date{width:90px;text-align:center;color: #a81010;}
+.event-date{width:90px;text-align:center;color: var(--e-global-color-primary);}
 
 .event-date .day{
 font-size:28px;
@@ -102,7 +102,7 @@ font-size:12px;
 color:#999;
 }
 
-.event-time{color: #a81010;font-size:12px;}
+.event-time{color: var(--e-global-color-primary);font-size:12px;}
 
 /* NO EVENTS */
 
