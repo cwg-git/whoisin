@@ -107,7 +107,7 @@ const Header = () => {
               <div id="nav-wrap">
                 <ul className="sf-menu">
                   <li className={isActive('')}>
-                    <a href="/">Home</a>
+                    <a href="/">¡Hola Barcelona!</a>
                   </li>
                   <li className={isActive('categories')}>
                     <a href="/categories">Categories</a>

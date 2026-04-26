@@ -46,32 +46,21 @@ const Home = () => {
     <div>
       <section className="banner-block text-center d-none d-lg-block d-md-none">
         <div className="container">
-          <div className="text-block text-center">
-            <h3>
-              <em>
-                Welcome,<strong> Bienvenue,</strong>
-              </em>
-            </h3>
-            <h1>أهلاً وسهلاً</h1>
-            <h2>
-              <span className="il">𐤀𐤊𐤌𐤀𐤋𐤊𐤍</span>
-            </h2>
+          <div class="text-block text-center">
+            <h4>THE LOCAL</h4>
+            <h1><em>event planner
+            <strong>from barcelona</strong>
+            with love</em></h1>
           </div>
         </div>
       </section>
-      <section className="mobile-banner d-none d-md-block d-lg-none text-center">
-        <div className="top-block">
-          <div className="text-block">
-            <h3>
-              <strong>Welcome, Bienvenue,</strong>
-            </h3>
-            <h1>أهلاً وسهلاً ,</h1>
-            <h2>
-              <span className="il">𐤀𐤊𐤌𐤀𐤋𐤊𐤍</span>
-            </h2>
+      <section class="mobile-banner d-none d-md-block d-lg-none text-center">
+        <div class="top-block">
+          <div class="text-block">
+            <h1><em>event planner from barcelona with love</em></h1>
           </div>
-        </div>
-        <div className="bottom-block">
+          </div>
+          <div class="bottom-block">
           <p>The signing ceremony of “Hudhud Sin” by the poet Ali Matar</p>
         </div>
       </section>
