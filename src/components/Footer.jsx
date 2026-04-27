@@ -9,9 +9,9 @@ const Footer = () => {
           <div className="col-md-12 our-links">
             <h3>Our links</h3>
             <ul>
-              <li><a href="/">Home</a></li>
+              <li><a href="/">¡Hola Barcelona!</a></li>
               <li><a href="/this-week">This Week</a></li>
-              <li><a href="/legacy">Legacy</a></li>
+              <li><a href="/today">Today</a></li>
               <li><a href="/about-us">About us</a></li>
               <li><a href="/categories">Categories</a></li>
               <li><a href="/agendas">Agendas</a></li>
