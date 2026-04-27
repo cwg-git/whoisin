@@ -1,6 +1,5 @@
 import React from 'react';
 import Categories from '../components/Categories';
-import LegacyBlock from '../components/LegacyBlock';
 const Agendas = () => {
     return (
         <div>
@@ -14,7 +13,6 @@ const Agendas = () => {
             </section>
             <Categories type="posts" />
             <Categories type="events" />
-            <LegacyBlock />
         </div>
 
     );

@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import axios from "axios";
 import { env } from "../config";
 
-import LegacyBlock from "../components/LegacyBlock";
 import Categories from "../components/Categories";
 import ThisWeek from "./LegacyPage";
 import Today from "./Today"

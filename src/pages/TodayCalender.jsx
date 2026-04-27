@@ -6,7 +6,6 @@ import {
   PiCaretRight,
 } from "react-icons/pi";
 import axios from "axios";
-import LegacyBlock from "../components/LegacyBlock";
 import { env } from "../config";
 import Categories from "../components/Categories";
 import dayjs from "dayjs";
@@ -459,9 +458,6 @@ const TodayCalender = () => {
       <section className="event-categories">
           <Categories type="events" />
         </section>
-      <section>
-        <LegacyBlock />
-      </section>
     </div>
   );
 };

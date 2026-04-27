@@ -1,4 +1,3 @@
-import LegacyBlock from '../components/LegacyBlock';
 import ContactUs from '../images/contact-us.webp';
 
 const Contact = () => {
@@ -88,7 +87,6 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
-            <LegacyBlock />
         </div>
     );
 };

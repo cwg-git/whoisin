@@ -3,7 +3,6 @@ import axios from "axios";
 import { env } from "../config";
 import { useParams } from "react-router-dom";
 import Categories from "../components/Categories";
-import LegacyBlock from "../components/LegacyBlock";
 import PostsMap from "../components/PostsMap";
 const PostsByCategoorie = () => {
   const params = useParams();
@@ -259,7 +258,6 @@ const PostsByCategoorie = () => {
           <PostsMap posts={posts} />
         </div>
       </section>
-      <LegacyBlock />
     </div>
   );
 };

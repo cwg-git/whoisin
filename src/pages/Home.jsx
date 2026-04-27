@@ -5,7 +5,6 @@ import icon2 from "../images/icon2.webp";
 import icon3 from "../images/icon3.webp";
 import icon4 from "../images/icon4.webp";
 import Categories from "../components/Categories";
-import LegacyBlock from "../components/LegacyBlock";
 import { env } from "../config";
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -68,7 +67,7 @@ const Home = () => {
         <div className="container">
           <div className="circle-block">
             <div className="row">
-              <div className="col-md-3 col-sm-6">
+              <div className="col-md-4 col-sm-6">
                 <div className="item text-center">
                   <figure className="box-img">
                     <img src={icon1} alt="Today" />
@@ -78,7 +77,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 col-sm-6">
+              <div className="col-md-4 col-sm-6">
                 <div className="item text-center">
                   <figure className="box-img">
                     <img src={icon2} alt="This Week" />
@@ -88,23 +87,13 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-3 col-sm-6">
+              <div className="col-md-4 col-sm-6">
                 <div className="item text-center">
                   <figure className="box-img">
                     <img src={icon3} alt="Agendas" />
                   </figure>
                   <div className="box-title">
                     <a href="/agendas">Agendas</a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-3 col-sm-6">
-                <div className="item text-center">
-                  <figure className="box-img">
-                    <img src={icon4} alt="Legacy" />
-                  </figure>
-                  <div className="box-title">
-                    <a href="/legacy">Legacy</a>
                   </div>
                 </div>
               </div>
@@ -259,7 +248,6 @@ const Home = () => {
       </section>
       <Categories type="posts" />
       <Categories type="events" />
-      <LegacyBlock />
     </div>
   );
 };

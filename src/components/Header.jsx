@@ -119,7 +119,7 @@ const Header = () => {
                     <a href="/agendas">Agendas</a>
                   </li>
                   <li className={isActive('legacy')}>
-                    <a href="/legacy">Legacy</a>
+                    <a href="/contact">Contact</a>
                   </li>
                 </ul>
               </div>

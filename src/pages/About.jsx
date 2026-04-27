@@ -1,5 +1,4 @@
 import React from 'react';
-import LegacyBlock from '../components/LegacyBlock';
 import DiscoverLebanonAbout from '../images/Discover-Lebanon-about.webp';
 import DiscoverLebanonAboutImage from '../images/Discover-Lebanon-about-image.webp';
 import OurValues from '../images/Our-Values.webp';
@@ -79,8 +78,6 @@ const About = () => {
                         </div>
                     </div>
                 </section></div>
-            
-            <LegacyBlock />
         </div>
 
     );
