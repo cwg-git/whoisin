@@ -16,7 +16,7 @@ html { overflow-x:hidden;
 }
 
 :root {
---e-global-color-primary: #f7890c;  
+--e-global-color-primary: #e77012;  
 --e-global-color-secondary: #54595f;
 }
 
@@ -78,7 +78,7 @@ html { overflow-x:hidden;
 
 /*=========== Header Start =============*/
 .header{ padding:0; background:#fff; margin:0; border:none; border-radius:0; transition:all 600ms ease-in-out; z-index:999999; }
-.header .logo-block{width:120px; transition:all 600ms ease-in-out;}
+.header .logo-block{width:160px; transition:all 600ms ease-in-out;}
 .header .logo-block img{max-width:100%; height:auto;}
 .header .rt-block{border-left:1px solid rgba(0,0,0,.1);}
 .header .rt-block .top-block{padding:12px 0; transition:all 600ms ease-in-out;}
@@ -89,7 +89,7 @@ html { overflow-x:hidden;
 .header .rt-block .top-block .search a{font-size:16px; color:var( --e-global-color-primary ); padding-left:15px;}
 
 .header .rt-block .bottom-block{border-top:1px solid rgba(0,0,0,.1);}
-.header .rt-block .bottom-block .navigation{padding:0 90px; border-right:1px solid rgba(0,0,0,.1); width:950px}
+.header .rt-block .bottom-block .navigation{padding:0 70px; border-right:1px solid rgba(0,0,0,.1); width:900px}
 .header .rt-block .bottom-block .navigation ul{margin: 0; padding: 0;list-style:none; display:flex; justify-content:space-between; align-items: center;}
 .header .rt-block .bottom-block .navigation ul li{padding:24px 0; position:relative;}
 .header .rt-block .bottom-block .navigation ul li a{font-size:16px; line-height:18px; font-weight: 500; color: var( --e-global-color-secondary ); }
@@ -119,8 +119,10 @@ html { overflow-x:hidden;
 /*================ Events Start ============== */
 .main-category-block{padding:50px 0;}
 .main-category-block .circle-block{ position:relative;}
+.main-category-block .circle-block .col-md-4{width:20%;}
+.main-category-block .circle-block img{width:60px;}
 .main-category-block .circle-block:after{z-index:-1; position: absolute;left: 0;right: 0;content: "";width: 80%;height: 1px;background: rgba(0,0,0,.2);top: 0;bottom: 0;margin: auto auto;}
-.main-category-block .circle-block .item{margin:0 auto; width:250px; height:250px; background-color: #f7890c; background-image: url("../images/cat-bg.png");padding: 60px 0px;background-size: cover;border-style: solid;border-width: 5px;border-color: #fff;border-radius: 50%;}
+.main-category-block .circle-block .item{margin:0 auto; width:210px; height:210px; background-color: #e77012; background-image: url("../images/cat-bg.png");padding: 60px 0px;background-size: cover;border-style: solid;border-width: 5px;border-color: #fff;border-radius: 50%;}
 .main-category-block .circle-block .item a{font-family: 'GT Walsheim Pro'; font-weight:500;font-size: 20px; line-height:22px; color:#fff; font-weight: 400;}
 
 
@@ -131,7 +133,7 @@ html { overflow-x:hidden;
 .post-block .post-box{margin-bottom:30px;}
 .post-block .post-box .thumbnail{margin:0;}
 .post-block .post-box .thumbnail img{width:100%; height:auto;}
-.post-block .post-box .post-image .post-content .post-title{padding:10px 20px 10px 20px; background:#f7890c;border-top: 4px solid #fff; border-right: 4px solid #fff; top: -30px; position: relative;width: 90%;}
+.post-block .post-box .post-image .post-content .post-title{padding:10px 20px 10px 20px; background:#e77012;border-top: 4px solid #fff; border-right: 4px solid #fff; top: -30px; position: relative;width: 90%;}
 .post-block .post-box .post-image .post-content .post-title a{font-family: "GT Walsheim", Sans-serif; display:inline-block; font-size: 17px; line-height:20px; color:#fff; font-weight: 400;}
 .post-block .post-box .post-image .post-content .post-category{padding-top:10px; margin-top:-25px;  }
 .post-block .post-pagination{text-align: center;position: relative;margin: 30px 0 30px;}
@@ -139,7 +141,7 @@ html { overflow-x:hidden;
 .post-block .post-pagination:after{position: absolute;width: 34%;content: "";left: inherit;right: 0;height: 1px;background: rgba(0,0,0,.1);top: 0;bottom: 0;margin: auto 0;}
 .post-block .post-pagination .pagination{justify-content:center;}
 .post-block .post-pagination .pagination .page-link{ color:var( --e-global-color-secondary ); border:1px solid rgba(0,0,0,.1); border-radius: 0;}
-.post-block .post-pagination .pagination .page-item.active .page-link, .post-block .post-pagination .pagination .page-item .page-link:hover{background:#f7890c; color:#fff;}
+.post-block .post-pagination .pagination .page-item.active .page-link, .post-block .post-pagination .pagination .page-item .page-link:hover{background:#e77012; color:#fff;}
 
 /*08-08-2025*/
 .post-block .post-box .post-image .img-block{position: relative;overflow: hidden;height: 280px;display: flex;justify-content: center;align-items: center;}
@@ -160,7 +162,7 @@ html { overflow-x:hidden;
 /*================ Events Start ============== */
 .post-categories{padding:50px 0;}
 .post-categories h4{font-family: 'GT Walsheim Pro'; font-weight:500;font-size: 18px;font-weight: 400;color: #373737; padding:0; margin:0 0 30px;}
-.post-categories .btn{background-color: #f7890c;font-family: "GT Walsheim", Sans-serif;font-size: 17px;font-weight: 500;line-height: 19px;letter-spacing: 0.6px;border-radius: 30px 30px 30px 30px;padding: 0px 0px 0px 0px; display:block; position:relative; overflow:hidden; margin-bottom:15px;}
+.post-categories .btn{background-color: #e77012;font-family: "GT Walsheim", Sans-serif;font-size: 17px;font-weight: 500;line-height: 19px;letter-spacing: 0.6px;border-radius: 30px 30px 30px 30px;padding: 0px 0px 0px 0px; display:block; position:relative; overflow:hidden; margin-bottom:15px;}
 .post-categories .btn span{background: url(../images/button-circle-bg.png) no-repeat 95%;z-index: 999;position: relative;display: block !important;width: 100%;padding: 20px 35px 20px 0;text-align: left; color:#fff; display:block;}
 /*.post-categories .col-md-4:nth-child(2) .btn span{background: url(../images/post-button-icon2.png) no-repeat 15px, url(../images/button-circle-bg.png) no-repeat 95%;}
 .post-categories .col-md-4:nth-child(3) .btn span{background: url(../images/post-button-icon10.png) no-repeat 15px, url(../images/button-circle-bg.png) no-repeat 95%;}
@@ -183,7 +185,7 @@ html { overflow-x:hidden;
 
 .event-categories{padding:0 0 50px;}
 .event-categories h4{font-family: 'GT Walsheim Pro'; font-weight:500;font-size: 18px;font-weight: 400;color: #373737; padding:0; margin:0 0 30px;}
-.event-categories .btn{background-color: #FFFFFF;font-family: "GT Walsheim", Sans-serif;font-size: 17px;font-weight: 500;line-height: 19px;letter-spacing: 0.6px;fill: #f7890c;color: #1e1e1e;border-style: solid;border-width: 1px 1px 1px 1px;border-color: #8D8D8D4F;border-radius: 30px 30px 30px 30px;box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.12);padding: 0px 0px 0px 0px; display:block; position:relative; overflow:hidden; margin-bottom:15px;}
+.event-categories .btn{background-color: #FFFFFF;font-family: "GT Walsheim", Sans-serif;font-size: 17px;font-weight: 500;line-height: 19px;letter-spacing: 0.6px;fill: #e77012;color: #1e1e1e;border-style: solid;border-width: 1px 1px 1px 1px;border-color: #8D8D8D4F;border-radius: 30px 30px 30px 30px;box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.12);padding: 0px 0px 0px 0px; display:block; position:relative; overflow:hidden; margin-bottom:15px;}
 .event-categories .btn span{background: url(../images/button-circle-bg-red.png) no-repeat 95%;z-index: 999;position: relative;display: block !important;width: 100%;padding: 20px 35px 20px 0;text-align: left;}
 /*.event-categories .col-md-4:nth-child(2) .btn span{background: url(../images/post-button-icon2-red.png) no-repeat 15px, url(../images/button-circle-bg-red.png) no-repeat 95%;}
 .event-categories .col-md-4:nth-child(3) .btn span{background: url(../images/post-button-icon10-red.png) no-repeat 15px, url(../images/button-circle-bg-red.png) no-repeat 95%;}
@@ -219,7 +221,7 @@ html { overflow-x:hidden;
 .legacy-block{padding:100px 0px 100px 0px; background:#fff6ec;}
 .legacy-block .button-block{position:relative;}
 .legacy-block .button-block:after{position: absolute;content: "";top:-20px; width: 21px;height: 67px;background: url(../images/button-before-bg.png) no-repeat center;right: 0;}
-.legacy-block .button-block .legacy-btn{background-color: #f7890c; border-radius:4px; color:#fff; font-family: 'GT Walsheim Pro'; font-weight:500;font-size: 19px;font-weight: 500;text-transform: uppercase;letter-spacing: 0.5px;word-spacing: 0px;padding: 20px 40px 20px 40px;}
+.legacy-block .button-block .legacy-btn{background-color: #e77012; border-radius:4px; color:#fff; font-family: 'GT Walsheim Pro'; font-weight:500;font-size: 19px;font-weight: 500;text-transform: uppercase;letter-spacing: 0.5px;word-spacing: 0px;padding: 20px 40px 20px 40px;}
 .legacy-block .legacy-box{text-align:center; position:relative; width:308px; margin:0 auto;}
 .legacy-block .legacy-box:after{content: "";position: absolute;width: 262px;height: 298px;background: url(../images/box-before-bg.png);top: -40px;z-index: 1;left: 10px;}
 .legacy-block .legacy-box a{position:relative; z-index:9; margin-bottom: 0px;color: #FFFFFF;font-family: "GT Walsheim", Sans-serif;font-size: 20px;font-weight: 400;}
@@ -250,7 +252,7 @@ footer p, footer a{color:#eee;}
 .header .mobile-menu-block{ display:none; float:right; width:37px; padding:0; margin:0 0 0 18px; }
 .header .mobile-menu-block .menu-icon{ display:block; cursor:pointer; }
 .header .mobile-menu-block .menu-icon ul{ padding:0; margin:0; }
-.header .mobile-menu-block .menu-icon ul li{ display: block;float: right;width: 100%;height: 2px;background:#f7890c;padding: 0;margin: 3.8px 0;transition: all 600ms ease-in-out;position:relative; }
+.header .mobile-menu-block .menu-icon ul li{ display: block;float: right;width: 100%;height: 2px;background:#e77012;padding: 0;margin: 3.8px 0;transition: all 600ms ease-in-out;position:relative; }
 .header .mobile-menu-block .menu-icon ul li:last-child{ width:100%; }
 .header .mobile-menu-block .menu-icon ul li::after{content:"";position:absolute;top:0;right:0;width:5px;height:100%;background: #356449;border-left: 2px solid #fff;opacity:0;visibility:hidden;transition: all 600ms ease-in-out;}
 .header .mobile-menu-block .menu-icon ul li:last-child::after{opacity:1;visibility:visible;}
@@ -279,7 +281,7 @@ footer p, footer a{color:#eee;}
 .overlay .sub-menu{ display:none; }
 
 .overlay .closebtn { position: absolute;top: 17px;right: 10px;font-size: 38px; line-height:35px; visibility:hidden; opacity:0;transition:all 0ms ease-in-out; z-index:99;font-weight: 300;border: 1px solid #ddd; border-radius: 100%;width: 45px;height: 45px;text-align: center;box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);}
-.overlay.open-mobile-menu .closebtn{line-height:23px; visibility:visible; opacity:1; transition:all 400ms ease-in-out; transition-delay:.3s;    color:#f7890c; }
+.overlay.open-mobile-menu .closebtn{line-height:23px; visibility:visible; opacity:1; transition:all 400ms ease-in-out; transition-delay:.3s;    color:#e77012; }
 .overlay.open-mobile-menu .closebtn:hover{background:var( --e-global-color-secondary );border-color:var( --e-global-color-secondary );color:#fff;}
 .overlay ul.mobile-menu{ width:100%; padding:0 0 30px; }
 .overlay ul.mobile-menu li{ padding:0;   border-bottom: 1px solid rgba(0, 0, 0, 0.05); position:relative; transition:all 300ms ease-in-out; transform: translateY(20px); visibility:hidden; opacity:0; }
@@ -294,13 +296,13 @@ footer p, footer a{color:#eee;}
 .overlay.open-mobile-menu ul.mobile-menu li:nth-child(8){ transition-delay:.8s; }
 .overlay.open-mobile-menu ul.mobile-menu li:nth-child(9){ transition-delay:.9s; }
 .overlay.open-mobile-menu ul.mobile-menu li a {display: inline-block;font-family: 'GT Walsheim Pro';font-size:14px;color:var( --e-global-color-secondary );line-height:16px; font-weight:600;letter-spacing:0.08em; text-decoration:none;padding:18px 0 18px 0;transition:all 300ms ease-in-out;text-transform: uppercase;}
-.overlay.open-mobile-menu ul.mobile-menu li a:hover{ color:#f7890c!important; }
-.overlay.open-mobile-menu ul.mobile-menu li.active a{ color: #f7890c!important; }
+.overlay.open-mobile-menu ul.mobile-menu li a:hover{ color:#e77012!important; }
+.overlay.open-mobile-menu ul.mobile-menu li.active a{ color: #e77012!important; }
 .overlay.open-mobile-menu ul.mobile-menu ul li a{ font-size:14px; color:var( --e-global-color-secondary ) !important;}
-.overlay.open-mobile-menu ul.mobile-menu ul li a:hover{ color:#f7890c !important; }
-.overlay.open-mobile-menu ul.mobile-menu ul li.active a{ color:#f7890c !important; }
+.overlay.open-mobile-menu ul.mobile-menu ul li a:hover{ color:#e77012 !important; }
+.overlay.open-mobile-menu ul.mobile-menu ul li.active a{ color:#e77012 !important; }
 .overlay.open-mobile-menu ul.mobile-menu ul ul li a{ font-size:14px; color:var( --e-global-color-secondary ); }
-.overlay.open-mobile-menu ul.mobile-menu ul ul li a:hover{ color:#f7890c; }
+.overlay.open-mobile-menu ul.mobile-menu ul ul li a:hover{ color:#e77012; }
 
 .overlay.open-mobile-menu ul li span{ font-size:15px; top:16px; }
 .overlay.open-mobile-menu .sub-menu{ margin:5px 0px 0 6px; }
@@ -338,7 +340,7 @@ footer p, footer a{color:#eee;}
 .about-us .md-block .img-block img{max-width: 48%; height: auto;}
 .about-us .md-block h3{font-family: "GT Walsheim", Sans-serif;font-weight: 400;color: #373737; font-size:2rem; position:relative; padding:0 0 20px; margin:0 0 30px;}
 .about-us .md-block h3:before{content: '';width: 35px;height: 1px;background: #a5a5a5;position: absolute;bottom: 0;left: 35px;}
-.about-us .md-block h3:after{content: '';width: 35px;height: 2px;background: #f7890c;position: absolute;bottom: 0;left: 0;}
+.about-us .md-block h3:after{content: '';width: 35px;height: 2px;background: #e77012;position: absolute;bottom: 0;left: 0;}
 .about-us .md-block p{color: #272727;font-family: "GT Walsheim", Sans-serif;font-size: 16px;font-weight: 400;line-height: 28px;}
 .about-us .md-block ul li{color: #272727;font-family: "GT Walsheim", Sans-serif;font-size: 16px;font-weight: 400;line-height: 28px; background:url(../images/right.png) no-repeat left center; background-size:16px; padding-left:25px; margin-bottom:10px;}
 .about-us .bottom-block h4{font-family: "GT Walsheim", Sans-serif;font-size: 20px;font-weight: 500;color: #373737; margin:15px 0;}
@@ -354,7 +356,7 @@ footer p, footer a{color:#eee;}
 .thisweek .side-menu ul li{position:relative; padding:13px 20px;}
 .thisweek .side-menu ul li a{font-size:16px; color:#7a7a7a;}
 .thisweek .side-menu ul li a:hover, .thisweek .side-menu ul li.active a{color: var(--e-global-color-primary);}
-.thisweek .side-menu ul li:before{content: "";position: absolute;top: 20px;left: 0;right: 0;background: #f7890c;width: 5px;height: 5px;}
+.thisweek .side-menu ul li:before{content: "";position: absolute;top: 20px;left: 0;right: 0;background: #e77012;width: 5px;height: 5px;}
 .thisweek .side-menu ul li:after{content: "";position: absolute;top: 28px;left: 2px;right: 0;background: rgba(0,0,0,.2);width: 1px;height: 30px;}
 .thisweek .side-menu ul li:last-child:after{display:none;}
 
@@ -387,7 +389,7 @@ footer p, footer a{color:#eee;}
 .today-block img{width:100%; height:auto;}
 .today-block h2{font-size:2rem; color:#373737;padding-bottom: 25px;position: relative;margin-bottom: 35px;}
 .today-block h2:before{content: '';width: 35px;height: 1px;background: #a5a5a5;position: absolute;bottom: 0;left: 35px;}
-.today-block h2:after{content: '';width: 35px;height: 2px;background: #f7890c;position: absolute;bottom: 0;left: 0;}
+.today-block h2:after{content: '';width: 35px;height: 2px;background: #e77012;position: absolute;bottom: 0;left: 0;}
 
 
 
@@ -408,14 +410,14 @@ footer p, footer a{color:#eee;}
 .contact-sec .img-block:after{content: '';position: absolute;width: 237px;height: 176px;background: url(../images/banner_bg_after.png) no-repeat;right: 0;bottom: 0;background-size: contain;background-position: right;}
 .contact-sec h3{font-family: "GT Walsheim", Sans-serif; font-size:2rem; line-height:1; font-weight: 400;color: #373737; padding:0 0 20px; margin:0 0 30px; position:relative;}
 .contact-sec h3:before{content: '';width: 35px;height: 1px;background: #a5a5a5;position: absolute;bottom: 0;left: 35px;}
-.contact-sec h3:after{content: '';width: 35px;height: 2px;background: #f7890c;position: absolute;bottom: 0;left: 0;}
+.contact-sec h3:after{content: '';width: 35px;height: 2px;background: #e77012;position: absolute;bottom: 0;left: 0;}
 
 
 .contact-sec .lt-block li{float:left; width:50%; margin-bottom:15px; padding-left:35px; background:url(../images/iphone.png) no-repeat left top;}
 .contact-sec .lt-block li:nth-child(2){background:url(../images/email.png) no-repeat left top;}
 .contact-sec .lt-block li:nth-child(3){background:url(../images/location.png) no-repeat left top;}
 .contact-sec .lt-block li:nth-child(4){background:url(../images/link.png) no-repeat left top;}
-.contact-sec .lt-block li h4{font-family: "GT Walsheim", Sans-serif;font-size: 14px; line-height:16px !important; font-weight: 500;text-transform: uppercase;line-height: 3px; margin-bottom: 15px;color: #f7890c; padding:0;}
+.contact-sec .lt-block li h4{font-family: "GT Walsheim", Sans-serif;font-size: 14px; line-height:16px !important; font-weight: 500;text-transform: uppercase;line-height: 3px; margin-bottom: 15px;color: #e77012; padding:0;}
 .contact-sec .lt-block li p{color: #272727;font-family: "GT Walsheim", Sans-serif;font-size: 18px;font-weight: 400; letter-spacing: 0.1em;}
 .contact-sec .lt-block li p a{color:#272727; transition:ease-in-out all 300ms;}
 .contact-sec .lt-block li p a:hover{color: #272727;}
@@ -427,7 +429,7 @@ footer p, footer a{color:#eee;}
 
 .contact-sec .rt-block textarea{min-height:85px; resize:none;}
 .contact-sec .rt-block p{padding:5px;}
-.contact-sec .rt-block .button-submit{ font-size:16px; line-height:18px; color:#fff; background:#f7890c; padding:10px 44px 10px 40px; border-radius:35px; border:none; transition:ease-in-out all 300ms; min-height:47px; font-weight:500; }
+.contact-sec .rt-block .button-submit{ font-size:16px; line-height:18px; color:#fff; background:#e77012; padding:10px 44px 10px 40px; border-radius:35px; border:none; transition:ease-in-out all 300ms; min-height:47px; font-weight:500; }
 .contact-sec .rt-block .button-submit:hover{background:#000;}
 
 
@@ -436,7 +438,7 @@ footer p, footer a{color:#eee;}
 .single-post .content-block{padding-right:30px;}
 .single-post .content-block h1{color:#373737; font-family: "GT Walsheim", Sans-serif; font-size:2.5rem; font-weight:400; position:relative; padding:0 0 15px; margin:0 0 30px;}
 .single-post .content-block h1:before{content: '';width: 35px;height: 1px;background: #a5a5a5;position: absolute;bottom: 0;left: 35px;}
-.single-post .content-block h1:after{content: '';width: 35px;height: 2px;background: #f7890c;position: absolute;bottom: 0;left: 0;}
+.single-post .content-block h1:after{content: '';width: 35px;height: 2px;background: #e77012;position: absolute;bottom: 0;left: 0;}
 .single-post .content-block p{font-weight:400;}
 .single-post .content-block p a{color: var(--e-global-color-primary);}
 .single-post .content-block p a:hover{color:var(--e-global-color-secondary);}
@@ -447,13 +449,13 @@ footer p, footer a{color:#eee;}
 .single-post .content-block h5{font-size:1.25rem; font-weight:700; padding:0; margin:0 0 15px;}
 
 .single-post .content-block .post-body img{width: auto;max-width: 100%;height: auto;}
-.single-post .content-block .btn.btn-primary{font-size: 16px;line-height: 18px;color: #fff;background: #f7890c;padding: 10px 44px 10px 40px;border-radius: 35px;border: none;transition: ease-in-out all 300ms;font-weight: 500;}
+.single-post .content-block .btn.btn-primary{font-size: 16px;line-height: 18px;color: #fff;background: #e77012;padding: 10px 44px 10px 40px;border-radius: 35px;border: none;transition: ease-in-out all 300ms;font-weight: 500;}
 .single-post .content-block .btn.btn-primary:hover{background: #000;}
 
 .single-post .sidebar{padding:25px; border:1px solid rgba(0,0,0,.1); border-radius:8px; position:sticky; top:100px;     }
 .single-post .sidebar h4{font-family: "GT Walsheim", Sans-serif;font-size: 22px;font-weight: 400;text-transform: capitalize;color: #373737; position:relative; padding:0 0 15px; margin:0 0 20px;}
 .single-post .sidebar h4:before{content: '';width: 35px;height: 1px;background: #a5a5a5;position: absolute;bottom: 0;left: 35px;}
-.single-post .sidebar h4:after{content: '';width: 35px;height: 2px;background: #f7890c;position: absolute;bottom: 0;left: 0;}
+.single-post .sidebar h4:after{content: '';width: 35px;height: 2px;background: #e77012;position: absolute;bottom: 0;left: 0;}
 .single-post .sidebar li{display:flex; padding:0 0 15px; margin-bottom:15px; border-bottom:1px solid rgba(0,0,0,.1);}
 .single-post .sidebar li:last-child{padding:0; margin:0; border:none;}
 .single-post .sidebar li .img-thumblain{width:75px; margin-right:15px;}
@@ -469,7 +471,7 @@ footer p, footer a{color:#eee;}
 .single-post .sidebar .inner-block li:before{content:""; position:absolute; top:8px; left:0; width:5px; height:5px; background:var(--e-global-color-primary);}
 .single-post .sidebar h3{font-size:18px; font-weight:bold; padding:0 0 15px; margin:0 0 20px; position:relative;}
 .single-post .sidebar h3:before{content: '';width: 35px;height: 1px;background: #a5a5a5;position: absolute;bottom: 0;left: 35px;}
-.single-post .sidebar h3:after{content: '';width: 35px;height: 2px;background: #f7890c;position: absolute;bottom: 0;left: 0;}
+.single-post .sidebar h3:after{content: '';width: 35px;height: 2px;background: #e77012;position: absolute;bottom: 0;left: 0;}
 .single-post .sidebar .d-flex{grid-gap:10px;}
 .single-post .sidebar .d-flex a{font-size: 20px;line-height: 12px;color: var(--e-global-color-secondary);}
 .single-post .sidebar .d-flex a:hover{color: var(--e-global-color-primary);}
@@ -596,7 +598,7 @@ ______________________________________________*/
 .header .rt-block .bottom-block .navigation{padding:0 20px; width:100%;}
 
 .mobile-banner .top-block{padding:20px 10px 20px 20px;}
-.mobile-banner h3, .mobile-banner h1, .mobile-banner h2{font-size: 30px;text-transform: uppercase;display: inline-block;margin: 0;color: #f7890c;font-family: "ITC Avant Garde Std Medium", Sans-serif;font-weight: 400;font-style: normal;}
+.mobile-banner h3, .mobile-banner h1, .mobile-banner h2{font-size: 30px;text-transform: uppercase;display: inline-block;margin: 0;color: #e77012;font-family: "ITC Avant Garde Std Medium", Sans-serif;font-weight: 400;font-style: normal;}
 .mobile-banner .bottom-block{padding:10px 20px 10px 20px; background:#F3F3F3;}
 
 .main-category-block{padding:40px 0 20px;}
@@ -695,7 +697,7 @@ footer .our-links{margin-bottom:30px;}
 .header .rt-block .bottom-block .navigation, .header .rt-block .bottom-block .language-btn, .header .rt-block .top-block .socila-media{display:none !important;}   
 .rt-block.ms-auto{width:auto; margin-left:0 !important;}
 .header .rt-block, .header .rt-block .bottom-block{border:none;}
-.header .logo-block{width:80px; padding: 5px 0; margin:0 auto;}
+.header .logo-block{width:120px; padding: 5px 0; margin:0 auto;}
 .post-categories .col-xs-4, .event-categories .col-xs-4{width:33.33%;}   
 .legacy-block .col-xs-4{width:33.33%;}
 .mobile-banner{display:block !important;}

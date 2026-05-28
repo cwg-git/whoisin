@@ -4,6 +4,8 @@ import icon1 from "../images/icon1.webp";
 import icon2 from "../images/icon2.webp";
 import icon3 from "../images/icon3.webp";
 import icon4 from "../images/icon4.webp";
+import icon5 from "../images/politician.png";
+import icon6 from "../images/confetti.png";
 import Categories from "../components/Categories";
 import { env } from "../config";
 const Home = () => {
@@ -94,6 +96,28 @@ const Home = () => {
                   </figure>
                   <div className="box-title">
                     <a href="/agendas">Agendas</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-md-4 col-sm-6">
+                <div className="item text-center">
+                  <figure className="box-img">
+                    <img src={icon5} alt="Agendas" />
+                  </figure>
+                  <div className="box-title">
+                    <a href="/fiestas-mayor">Fiestas Mayor</a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-md-4 col-sm-6">
+                <div className="item text-center">
+                  <figure className="box-img">
+                    <img src={icon6} alt="Agendas" />
+                  </figure>
+                  <div className="box-title">
+                    <a href="/festivales">Festivales</a>
                   </div>
                 </div>
               </div>

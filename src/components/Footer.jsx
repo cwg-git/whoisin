@@ -16,6 +16,7 @@ const Footer = () => {
               <li><a href="/categories">Categories</a></li>
               <li><a href="/agendas">Agendas</a></li>
               <li><a href="/contact">Contact</a></li>
+              <li><a href="/subscriptions">Subscriptions</a></li>
               <li><a href="/privacy-policy">Privacy Policy</a></li>
             </ul>
           </div>
