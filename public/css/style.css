@@ -95,6 +95,9 @@ html { overflow-x:hidden;
 .header .rt-block .bottom-block .navigation ul li a{font-size:16px; line-height:18px; font-weight: 500; color: var( --e-global-color-secondary ); }
 .header .rt-block .bottom-block .navigation ul li a:hover, .header .rt-block .bottom-block .navigation ul li.active a{color:var( --e-global-color-primary );}
 .header .rt-block .bottom-block .language-btn{padding-left:90px; gap:10px;}
+.header .rt-block .bottom-block .language-btn img{width:32px; height:auto;}
+.lang-switch{display:flex; gap:5px;}
+.lang-switch img{width:32px; height:auto;}
 
 
 @media screen and (min-width: 768px){

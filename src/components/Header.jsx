@@ -1,9 +1,9 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import logo from '../images/logo.jpg';
-import ar from '../images/ar.webp';
-import en from '../images/en.webp';
-import fr from '../images/fr.webp';
+import es from '../images/Spanish_flag.jpg';
+import en from '../images/United_Kingdom_flag.jpg';
+import ec from '../images/catalonia-flag.jpg';
 
 const Header = () => {
   const location = useLocation();
@@ -128,22 +128,22 @@ const Header = () => {
             {/* Language switch */}
             <div className="language-btn d-flex">
               <button 
-                onClick={() => switchLanguage('ar')}
+                onClick={() => switchLanguage('es')}
                 style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
               >
-                <img src={ar} alt="Arabic Language" />
+                <img src={es} alt="Arabic Language" />
+              </button>
+              <button 
+                onClick={() => switchLanguage('fr')}
+                style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
+              >
+                <img src={ec} alt="French Language" />
               </button>
               <button 
                 onClick={() => switchLanguage('en')}
                 style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
               >
                 <img src={en} alt="English Language" />
-              </button>
-              <button 
-                onClick={() => switchLanguage('fr')}
-                style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
-              >
-                <img src={fr} alt="French Language" />
               </button>
             </div>
           </div>
@@ -228,29 +228,29 @@ const Header = () => {
             </form>
 
             <ul className="mobile-menu">
-              <li><a href="/" onClick={() => setIsMobileMenuOpen(false)}>Home</a></li>
+              <li><a href="/" onClick={() => setIsMobileMenuOpen(false)}>¡Hola Barcelona!</a></li>
               <li><a href="/categories" onClick={() => setIsMobileMenuOpen(false)}>Categories</a></li>
               <li><a href="/this-week" onClick={() => setIsMobileMenuOpen(false)}>This Week</a></li>
               <li><a href="/agendas" onClick={() => setIsMobileMenuOpen(false)}>Agendas</a></li>
-              <li><a href="/legacy" onClick={() => setIsMobileMenuOpen(false)}>Legacy</a></li>
+              <li><a href="/subscriptions" onClick={() => setIsMobileMenuOpen(false)}>Subscriptions</a></li>
               <li className="lang-switch">
                 <button 
-                  onClick={() => { switchLanguage('ar'); setIsMobileMenuOpen(false); }}
+                  onClick={() => { switchLanguage('es'); setIsMobileMenuOpen(false); }}
                   style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
                 >
-                  <img src={ar} alt="Arabic" />
+                  <img src={es} alt="Arabic" />
+                </button>
+                <button 
+                  onClick={() => { switchLanguage('ec'); setIsMobileMenuOpen(false); }}
+                  style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
+                >
+                  <img src={ec} alt="French" />
                 </button>
                 <button 
                   onClick={() => { switchLanguage('en'); setIsMobileMenuOpen(false); }}
                   style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
                 >
                   <img src={en} alt="English" />
-                </button>
-                <button 
-                  onClick={() => { switchLanguage('fr'); setIsMobileMenuOpen(false); }}
-                  style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
-                >
-                  <img src={fr} alt="French" />
                 </button>
               </li>
             </ul>
