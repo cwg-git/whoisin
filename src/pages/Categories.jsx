@@ -9,7 +9,7 @@ const CategoriesPage = () => {
                     <div className="container">
                         <div className="text-block">
                             <h3><em>OUR</em></h3>
-                            <h1><em>Categories</em></h1>
+                            <h1><em>Categorías</em></h1>
                         </div>
                     </div>
                 </section>

@@ -5,38 +5,25 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="row">
-          {/* Our Links */}
           <div className="col-md-12 our-links">
-            <h3>Our links</h3>
+            <h3>Enlaces</h3>
             <ul>
-              <li><a href="/">¡Hola Barcelona!</a></li>
-              <li><a href="/this-week">This Week</a></li>
-              <li><a href="/today">Today</a></li>
-              <li><a href="/about-us">About us</a></li>
-              <li><a href="/categories">Categories</a></li>
-              <li><a href="/agendas">Agendas</a></li>
-              <li><a href="/contact">Contact</a></li>
-              <li><a href="/subscriptions">Subscriptions</a></li>
-              <li><a href="/privacy-policy">Privacy Policy</a></li>
+              <li><a href="/">Hola Barcelona</a></li>
+              <li><a href="/today">Hoy</a></li>
+              <li><a href="/this-week">Esta semana</a></li>
+              <li><a href="/agendas">Agenda</a></li>
+              <li><a href="/fiestas-mayor">Fiestas Mayor</a></li>
+              <li><a href="/festivales">Festivales</a></li>
+              <li><a href="/categories">Categorías</a></li>
+              <li><a href="/subscriptions">Suscripciones</a></li>
+              <li><a href="/privacy-policy">Política de privacidad</a></li>
             </ul>
           </div>
-
-          {/* Lebanese Legacy */}
-          {/*<div className="col-md-3">
-            <h3>Lebanese Legacy</h3>
-            <ul>
-              <li><a href="/legacy">Legacy</a></li>
-              <li><a href="/yesterday">Yesterday</a></li>
-              <li><a href="/today">Today</a></li>
-              <li><a href="/forever">Forever</a></li>
-            </ul>
-          </div>*/}
         </div>
 
-        {/* Bottom Block */}
         <div className="bottom-block d-flex justify-content-between">
           <p>© Whoisinbcn.com</p>
-          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/subscriptions">Suscripciones</a>
         </div>
       </div>
     </footer>

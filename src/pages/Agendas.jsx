@@ -1,20 +1,7 @@
-import React from 'react';
-import Categories from '../components/Categories';
-const Agendas = () => {
-    return (
-        <div>
-            <section className="inner-banner">
-                <div className="container">
-                    <div className="text-block">
-                        <h3><em>Our</em></h3>
-                        <h1><em>Agendas</em></h1>
-                    </div>
-                </div>
-            </section>
-            <Categories type="posts" />
-            <Categories type="events" />
-        </div>
+import CmsPage from "./CmsPage";
 
-    );
+const Agendas = () => {
+  return <CmsPage slug="agendas" titleFallback="Agendas" />;
 };
+
 export default Agendas;

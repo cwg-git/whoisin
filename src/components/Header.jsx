@@ -1,9 +1,9 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import logo from '../images/logo.jpg';
-import es from '../images/Spanish_flag.jpg';
-import en from '../images/United_Kingdom_flag.jpg';
-import ec from '../images/catalonia-flag.jpg';
+import logo from '../images/--logo.jpg';
+import es from '../images/ar.png';
+import en from '../images/en.png';
+import ec from '../images/fr.png';
 
 const Header = () => {
   const location = useLocation();
@@ -37,21 +37,13 @@ const Header = () => {
     setSearchText('');
   };
 
-  // Language switcher - now working
   const switchLanguage = (lang) => {
-    if (lang === 'en') {
-      // English - reload original page
+    if (lang === 'es') {
       window.location.reload();
       return;
     }
-    
-    // Get current page path
-    const currentPath = window.location.pathname + window.location.search;
-    
-    // Create Google Translate proxy URL
-    const translateUrl = `https://translate.google.com/translate?hl=${lang}&sl=en&tl=${lang}&u=${encodeURIComponent(window.location.href)}`;
-    
-    // Open in same tab
+
+    const translateUrl = `https://translate.google.com/translate?hl=${lang}&sl=es&tl=${lang}&u=${encodeURIComponent(window.location.href)}`;
     window.location.href = translateUrl;
   };
 
@@ -60,7 +52,7 @@ const Header = () => {
       <div className="container position-relative d-flex align-items-center justify-content-end">
         {/* Logo */}
         <div className="logo-block">
-          <a href="/"><img src={logo} alt="Yalla Lebanon Logo" /></a>
+          <a href="/"><img src={logo} alt="Whoisin Barcelona Logo" /></a>
         </div>
 
         <div className="rt-block ms-auto">
@@ -110,16 +102,25 @@ const Header = () => {
                     <a href="/">¡Hola Barcelona!</a>
                   </li>
                   <li className={isActive('categories')}>
-                    <a href="/categories">Categories</a>
+                    <a href="/categories">Categorías</a>
                   </li>
+                  {/* <li className={isActive('today')}>
+                    <a href="/today">Hoy</a>
+                  </li> */}
                   <li className={isActive('this-week')}>
-                    <a href="/this-week">This Week</a>
+                    <a href="/this-week">This week</a>
                   </li>
-                  <li className={isActive('agendas')}>
-                    <a href="/agendas">Agendas</a>
+                  {/* <li className={isActive('agendas')}>
+                    <a href="/agendas">Agenda</a>
                   </li>
-                  <li className={isActive('legacy')}>
-                    <a href="/subscriptions">Subscriptions</a>
+                  <li className={isActive('fiestas-mayor')}>
+                    <a href="/fiestas-mayor">Fiestas Mayor</a>
+                  </li>
+                  <li className={isActive('festivales')}>
+                    <a href="/festivales">Festivales</a>
+                  </li> */}
+                  <li className={isActive('subscriptions')}>
+                    <a href="/subscriptions">Suscripciones</a>
                   </li>
                 </ul>
               </div>
@@ -131,19 +132,19 @@ const Header = () => {
                 onClick={() => switchLanguage('es')}
                 style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
               >
-                <img src={es} alt="Arabic Language" />
+                <img src={es} alt="Español" />
               </button>
               <button 
-                onClick={() => switchLanguage('fr')}
+                onClick={() => switchLanguage('ca')}
                 style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
               >
-                <img src={ec} alt="French Language" />
+                <img src={ec} alt="Català" />
               </button>
               <button 
                 onClick={() => switchLanguage('en')}
                 style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
               >
-                <img src={en} alt="English Language" />
+                <img src={en} alt="English" />
               </button>
             </div>
           </div>
@@ -158,7 +159,7 @@ const Header = () => {
                 type="text"
                 value={searchText}
                 onChange={(e) => setSearchText(e.target.value)}
-                placeholder="Search posts and events..."
+                placeholder="Buscar blogs y eventos..."
                 className="desktop-search-input"
                 autoFocus
               />
@@ -218,7 +219,7 @@ const Header = () => {
                   type="text"
                   value={searchText}
                   onChange={(e) => setSearchText(e.target.value)}
-                  placeholder="Search posts and events..."
+                  placeholder="Buscar blogs y eventos..."
                   className="mobile-search-input"
                 />
                 <button type="submit" className="mobile-search-btn">
@@ -229,22 +230,25 @@ const Header = () => {
 
             <ul className="mobile-menu">
               <li><a href="/" onClick={() => setIsMobileMenuOpen(false)}>¡Hola Barcelona!</a></li>
-              <li><a href="/categories" onClick={() => setIsMobileMenuOpen(false)}>Categories</a></li>
-              <li><a href="/this-week" onClick={() => setIsMobileMenuOpen(false)}>This Week</a></li>
-              <li><a href="/agendas" onClick={() => setIsMobileMenuOpen(false)}>Agendas</a></li>
-              <li><a href="/subscriptions" onClick={() => setIsMobileMenuOpen(false)}>Subscriptions</a></li>
+              <li><a href="/categories" onClick={() => setIsMobileMenuOpen(false)}>Categorías</a></li>
+              <li><a href="/today" onClick={() => setIsMobileMenuOpen(false)}>Hoy</a></li>
+              <li><a href="/this-week" onClick={() => setIsMobileMenuOpen(false)}>Esta semana</a></li>
+              <li><a href="/agendas" onClick={() => setIsMobileMenuOpen(false)}>Agenda</a></li>
+              <li><a href="/fiestas-mayor" onClick={() => setIsMobileMenuOpen(false)}>Fiestas Mayor</a></li>
+              <li><a href="/festivales" onClick={() => setIsMobileMenuOpen(false)}>Festivales</a></li>
+              <li><a href="/subscriptions" onClick={() => setIsMobileMenuOpen(false)}>Suscripciones</a></li>
               <li className="lang-switch">
                 <button 
                   onClick={() => { switchLanguage('es'); setIsMobileMenuOpen(false); }}
                   style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
                 >
-                  <img src={es} alt="Arabic" />
+                  <img src={es} alt="Español" />
                 </button>
                 <button 
-                  onClick={() => { switchLanguage('ec'); setIsMobileMenuOpen(false); }}
+                  onClick={() => { switchLanguage('ca'); setIsMobileMenuOpen(false); }}
                   style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer' }}
                 >
-                  <img src={ec} alt="French" />
+                  <img src={ec} alt="Català" />
                 </button>
                 <button 
                   onClick={() => { switchLanguage('en'); setIsMobileMenuOpen(false); }}

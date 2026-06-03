@@ -72,13 +72,13 @@ const PostsByCategoorie = () => {
                       <div className="post-box">
                         <div className="post-image position-relative">
                           {" "}
-                          <div class="img-block">
+                          <div className="img-block">
                             <figure className="thumbnail zoom-effect">
                               <a href={`/post/${post.slug}`}>
                                 <img src={post.image} alt={post.title} />
                               </a>
                             </figure>
-                            <div class="bordered-effect">
+                            <div className="bordered-effect">
                               <a
                                 href={`/post/${post.slug}`}
                                 aria-label={post.title}
@@ -108,13 +108,13 @@ const PostsByCategoorie = () => {
                       <div className="post-box">
                         <div className="post-image position-relative">
                           {" "}
-                          <div class="img-block">
+                          <div className="img-block">
                             <figure className="thumbnail zoom-effect">
                               <a href={`/post/${post.slug}`}>
                                 <img src={post.image} alt={post.title} />
                               </a>
                             </figure>
-                            <div class="bordered-effect">
+                            <div className="bordered-effect">
                               <a
                                 href={`/post/${post.slug}`}
                                 aria-label={post.title}
@@ -144,13 +144,13 @@ const PostsByCategoorie = () => {
                       <div className="post-box">
                         <div className="post-image position-relative">
                           {" "}
-                          <div class="img-block">
+                          <div className="img-block">
                             <figure className="thumbnail zoom-effect">
                               <a href={`/post/${post.slug}`}>
                                 <img src={post.image} alt={post.title} />
                               </a>
                             </figure>
-                            <div class="bordered-effect">
+                            <div className="bordered-effect">
                               <a
                                 href={`/post/${post.slug}`}
                                 aria-label={post.title}

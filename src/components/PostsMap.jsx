@@ -22,8 +22,8 @@ function formatDate(date) {
   const day = String(date.getDate()).padStart(2, "0");
   return `${year}-${month}-${day}`;
 }
-// Default fallback (Beirut)
-const DEFAULT_CENTER = [33.8938, 35.5018];
+// Barcelona is the default map focus for the Whoisin experience.
+const DEFAULT_CENTER = [41.3874, 2.1686];
 
 /* ---------------------------
    MARKER CLUSTER WITH SPIDERIFY

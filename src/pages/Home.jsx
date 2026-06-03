@@ -47,22 +47,22 @@ const Home = () => {
     <div>
       <section className="banner-block text-center d-none d-lg-block d-md-none">
         <div className="container">
-          <div class="text-block text-center">
-            <h4>THE LOCAL</h4>
+          <div className="text-block text-center">
+            <h4>LA AGENDA LOCAL</h4>
             <h1><em>event planner
             <strong>from barcelona</strong>
             with love</em></h1>
           </div>
         </div>
       </section>
-      <section class="mobile-banner d-none d-md-block d-lg-none text-center">
-        <div class="top-block">
-          <div class="text-block">
-            <h1><em>event planner from barcelona with love</em></h1>
+      <section className="mobile-banner d-none d-md-block d-lg-none text-center">
+        <div className="top-block">
+          <div className="text-block">
+            <h1><em>Agenda local de Barcelona</em></h1>
           </div>
           </div>
-          <div class="bottom-block">
-          <p>The signing ceremony of “Hudhud Sin” by the poet Ali Matar</p>
+          <div className="bottom-block">
+          <p>Eventos, cultura y planes de la ciudad.</p>
         </div>
       </section>
       <section className="main-category-block">
@@ -75,7 +75,7 @@ const Home = () => {
                     <img src={icon1} alt="Today" />
                   </figure>
                   <div className="box-title">
-                    <a href="/today">Today</a>
+                    <a href="/today">Hoy</a>
                   </div>
                 </div>
               </div>
@@ -85,7 +85,7 @@ const Home = () => {
                     <img src={icon2} alt="This Week" />
                   </figure>
                   <div className="box-title">
-                    <a href="/this-week">This week</a>
+                    <a href="/this-week">Esta semana</a>
                   </div>
                 </div>
               </div>
@@ -95,7 +95,7 @@ const Home = () => {
                     <img src={icon3} alt="Agendas" />
                   </figure>
                   <div className="box-title">
-                    <a href="/agendas">Agendas</a>
+                    <a href="/agendas">Agenda</a>
                   </div>
                 </div>
               </div>
@@ -103,7 +103,7 @@ const Home = () => {
               <div className="col-md-4 col-sm-6">
                 <div className="item text-center">
                   <figure className="box-img">
-                    <img src={icon5} alt="Agendas" />
+                    <img src={icon5} alt="Fiestas Mayor" />
                   </figure>
                   <div className="box-title">
                     <a href="/fiestas-mayor">Fiestas Mayor</a>
@@ -114,7 +114,7 @@ const Home = () => {
               <div className="col-md-4 col-sm-6">
                 <div className="item text-center">
                   <figure className="box-img">
-                    <img src={icon6} alt="Agendas" />
+                    <img src={icon6} alt="Festivales" />
                   </figure>
                   <div className="box-title">
                     <a href="/festivales">Festivales</a>
@@ -128,7 +128,7 @@ const Home = () => {
       <section className="post-block">
         <div className="container">
           <div className="title-block">
-            <h4>Recent Posts</h4>
+            <h4>Blogs recientes</h4>
           </div>
 
           <div className="d-block d-lg-block d-md-none">
