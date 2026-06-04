@@ -9,14 +9,14 @@ const Footer = () => {
             <h3>Enlaces</h3>
             <ul>
               <li><a href="/">Hola Barcelona</a></li>
-              <li><a href="/today">Hoy</a></li>
-              <li><a href="/this-week">Esta semana</a></li>
+              <li><a href="/today">Today</a></li>
+              <li><a href="/this-week">This week</a></li>
               <li><a href="/agendas">Agenda</a></li>
               <li><a href="/fiestas-mayor">Fiestas Mayor</a></li>
               <li><a href="/festivales">Festivales</a></li>
               <li><a href="/categories">Categorías</a></li>
               <li><a href="/subscriptions">Suscripciones</a></li>
-              <li><a href="/privacy-policy">Política de privacidad</a></li>
+              <li><a href="/privacy-policy">Privacy Policy</a></li>
             </ul>
           </div>
         </div>

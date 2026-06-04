@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import logo from '../images/--logo.jpg';
+import logo from '../images/logo.jpg';
 import es from '../images/ar.png';
 import en from '../images/en.png';
 import ec from '../images/fr.png';
@@ -110,15 +110,16 @@ const Header = () => {
                   <li className={isActive('this-week')}>
                     <a href="/this-week">This week</a>
                   </li>
-                  {/* <li className={isActive('agendas')}>
-                    <a href="/agendas">Agenda</a>
-                  </li>
                   <li className={isActive('fiestas-mayor')}>
                     <a href="/fiestas-mayor">Fiestas Mayor</a>
                   </li>
                   <li className={isActive('festivales')}>
                     <a href="/festivales">Festivales</a>
-                  </li> */}
+                  </li>
+                  {/* <li className={isActive('agendas')}>
+                    <a href="/agendas">Agenda</a>
+                  </li>
+                   */}
                   <li className={isActive('subscriptions')}>
                     <a href="/subscriptions">Suscripciones</a>
                   </li>
@@ -231,8 +232,8 @@ const Header = () => {
             <ul className="mobile-menu">
               <li><a href="/" onClick={() => setIsMobileMenuOpen(false)}>¡Hola Barcelona!</a></li>
               <li><a href="/categories" onClick={() => setIsMobileMenuOpen(false)}>Categorías</a></li>
-              <li><a href="/today" onClick={() => setIsMobileMenuOpen(false)}>Hoy</a></li>
-              <li><a href="/this-week" onClick={() => setIsMobileMenuOpen(false)}>Esta semana</a></li>
+              <li><a href="/today" onClick={() => setIsMobileMenuOpen(false)}>Today</a></li>
+              <li><a href="/this-week" onClick={() => setIsMobileMenuOpen(false)}>This week</a></li>
               <li><a href="/agendas" onClick={() => setIsMobileMenuOpen(false)}>Agenda</a></li>
               <li><a href="/fiestas-mayor" onClick={() => setIsMobileMenuOpen(false)}>Fiestas Mayor</a></li>
               <li><a href="/festivales" onClick={() => setIsMobileMenuOpen(false)}>Festivales</a></li>
