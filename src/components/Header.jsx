@@ -107,9 +107,9 @@ const Header = () => {
                   {/* <li className={isActive('today')}>
                     <a href="/today">Hoy</a>
                   </li> */}
-                  <li className={isActive('this-week')}>
+                  {/* <li className={isActive('this-week')}>
                     <a href="/this-week">This week</a>
-                  </li>
+                  </li> */}
                   <li className={isActive('fiestas-mayor')}>
                     <a href="/fiestas-mayor">Fiestas Mayor</a>
                   </li>
