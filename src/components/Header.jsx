@@ -98,9 +98,9 @@ const Header = () => {
             <div className="navigation">
               <div id="nav-wrap">
                 <ul className="sf-menu">
-                  <li className={isActive('')}>
+                  {/* <li className={isActive('')}>
                     <a href="/">¡Hola Barcelona!</a>
-                  </li>
+                  </li> */}
                   <li className={isActive('categories')}>
                     <a href="/categories">Categorías</a>
                   </li>

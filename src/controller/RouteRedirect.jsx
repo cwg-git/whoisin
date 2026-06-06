@@ -8,6 +8,7 @@ import Legacy from "../pages/Legacy";
 import Categories from "../pages/Categories";
 import Agendas from "../pages/Agendas";
 import About from "../pages/About";
+import Contact from "../pages/Contact";
 import CmsPage from "../pages/CmsPage";
 import Festival from "../pages/Festival";
 import FiestasMajor from "../pages/FiestasMajor";
@@ -46,7 +47,7 @@ const RedirectComponent = () => {
     categories: <Categories />,
     agendas: <Agendas />,
     "about-us": <About />,
-    contact: <Subscriptions />,
+    contact: <Contact />,
     festival: <Festival />,
     festivales: <Festival />,
     "fiestas-major": <FiestasMajor />,
