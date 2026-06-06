@@ -48,9 +48,9 @@ const Home = () => {
       <section className="banner-block text-center d-none d-lg-block d-md-none">
         <div className="container">
           <div className="text-block text-center">
-            <h4>LA AGENDA LOCAL</h4>
+            <h4>THE LOCAL AGENDA</h4>
             <h1><em>event planner
-            <strong>from barcelona</strong>
+            <strong>from Barcelona</strong>
             with love</em></h1>
           </div>
         </div>
@@ -58,11 +58,11 @@ const Home = () => {
       <section className="mobile-banner d-none d-md-block d-lg-none text-center">
         <div className="top-block">
           <div className="text-block">
-            <h1><em>Agenda local de Barcelona</em></h1>
+            <h1><em>Barcelona's Local Agenda</em></h1>
           </div>
           </div>
           <div className="bottom-block">
-          <p>Eventos, cultura y planes de la ciudad.</p>
+          <p>Events, culture and plans in the city.</p>
         </div>
       </section>
       <section className="main-category-block">
@@ -75,7 +75,7 @@ const Home = () => {
                     <img src={icon1} alt="Today" />
                   </figure>
                   <div className="box-title">
-                    <a href="/today">Hoy</a>
+                    <a href="/today">Today</a>
                   </div>
                 </div>
               </div>
@@ -85,7 +85,7 @@ const Home = () => {
                     <img src={icon2} alt="This Week" />
                   </figure>
                   <div className="box-title">
-                    <a href="/this-week">Esta semana</a>
+                    <a href="/this-week">This week</a>
                   </div>
                 </div>
               </div>
@@ -103,10 +103,10 @@ const Home = () => {
               <div className="col-md-4 col-sm-6">
                 <div className="item text-center">
                   <figure className="box-img">
-                    <img src={icon5} alt="Fiestas Mayor" />
+                    <img src={icon5} alt="Major Festivals" />
                   </figure>
                   <div className="box-title">
-                    <a href="/fiestas-mayor">Fiestas Mayor</a>
+                    <a href="/fiestas-mayor">Major Festivals</a>
                   </div>
                 </div>
               </div>
@@ -114,10 +114,10 @@ const Home = () => {
               <div className="col-md-4 col-sm-6">
                 <div className="item text-center">
                   <figure className="box-img">
-                    <img src={icon6} alt="Festivales" />
+                    <img src={icon6} alt="Festivals" />
                   </figure>
                   <div className="box-title">
-                    <a href="/festivales">Festivales</a>
+                    <a href="/festivales">Festivals</a>
                   </div>
                 </div>
               </div>
@@ -128,7 +128,7 @@ const Home = () => {
       <section className="post-block">
         <div className="container">
           <div className="title-block">
-            <h4>Blogs recientes</h4>
+            <h4>Recent Blogs</h4>
           </div>
 
           <div className="d-block d-lg-block d-md-none">
