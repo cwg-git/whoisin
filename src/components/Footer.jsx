@@ -107,7 +107,7 @@ const Footer = () => {
 
         <div className="bottom-block d-flex justify-content-between">
           <p>© whoisinbcn.com</p>
-          <a href="/privacy-policy">Privacy Policy</a>
+          {/* <a href="/privacy-policy">Privacy Policy</a> */}
         </div>
       </div>
     </footer>
