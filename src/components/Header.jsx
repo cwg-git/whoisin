@@ -111,10 +111,10 @@ const Header = () => {
                     <a href="/this-week">This week</a>
                   </li> */}
                   <li className={isActive('fiestas-mayor')}>
-                    <a href="/fiestas-mayor">Fiestas Mayor</a>
+                    <a href="/maps-category/fiestas-mayors">Fiestas Mayor</a>
                   </li>
                   <li className={isActive('festivales')}>
-                    <a href="/festivales">Festivales</a>
+                    <a href="/maps-category/fesitvales">Festivales</a>
                   </li>
                   {/* <li className={isActive('agendas')}>
                     <a href="/agendas">Agenda</a>

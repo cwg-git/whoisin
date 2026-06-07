@@ -103,10 +103,10 @@ const Home = () => {
               <div className="col-md-4 col-sm-6">
                 <div className="item text-center">
                   <figure className="box-img">
-                    <img src={icon5} alt="Major Festivals" />
+                    <img src={icon5} alt="Fiestas Mayor" />
                   </figure>
                   <div className="box-title">
-                    <a href="/fiestas-mayor">Major Festivals</a>
+                    <a href="/maps-category/fiestas-mayors">Fiestas Mayor</a>
                   </div>
                 </div>
               </div>
@@ -117,7 +117,7 @@ const Home = () => {
                     <img src={icon6} alt="Festivals" />
                   </figure>
                   <div className="box-title">
-                    <a href="/festivales">Festivals</a>
+                    <a href="/maps-category/festivales">Festivales</a>
                   </div>
                 </div>
               </div>

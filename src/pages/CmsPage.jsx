@@ -62,24 +62,44 @@ const CmsPage = ({ slug, titleFallback, children }) => {
   const hasInlineImages = /<img\b/i.test(rawContent);
   const contentHtml = resolveInlineImageUrls(rawContent);
 
+  // Split on the placeholder to inject children
+  const PLACEHOLDER = "Dynamic Content";
+  const hasDynamicSlot = children && contentHtml.includes(PLACEHOLDER);
+  const [beforeSlot, afterSlot] = hasDynamicSlot
+    ? contentHtml.split(PLACEHOLDER)
+    : [contentHtml, ""];
+
   return (
     <div className={`cms-page cms-page--${slug}`}>
       {page.image_url && !hasInlineImages ? (
-        <section className="page-hero">
+        <section className="page-hero" style={{ display: "none" }}>
           <div className="container">
             <img src={page.image_url} alt={page.title} className="img-fluid" />
           </div>
         </section>
       ) : null}
 
-      <div
-        className="cms-page-content"
-        dangerouslySetInnerHTML={{
-          __html: contentHtml,
-        }}
-      />
-
-      {children}
+      {hasDynamicSlot ? (
+        <>
+          <div
+            className="cms-page-content"
+            dangerouslySetInnerHTML={{ __html: beforeSlot }}
+          />
+          {children}
+          <div
+            className="cms-page-content"
+            dangerouslySetInnerHTML={{ __html: afterSlot }}
+          />
+        </>
+      ) : (
+        <>
+          <div
+            className="cms-page-content"
+            dangerouslySetInnerHTML={{ __html: contentHtml }}
+          />
+          {children}
+        </>
+      )}
     </div>
   );
 };
