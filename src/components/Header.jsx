@@ -114,7 +114,7 @@ const Header = () => {
                     <a href="/maps-category/fiestas-mayors">Fiestas Mayor</a>
                   </li>
                   <li className={isActive('festivales')}>
-                    <a href="/maps-category/fesitvales">Festivales</a>
+                    <a href="/maps-category/festivales">Festivales</a>
                   </li>
                   {/* <li className={isActive('agendas')}>
                     <a href="/agendas">Agenda</a>
@@ -235,8 +235,8 @@ const Header = () => {
               <li><a href="/today" onClick={() => setIsMobileMenuOpen(false)}>Today</a></li>
               <li><a href="/this-week" onClick={() => setIsMobileMenuOpen(false)}>This week</a></li>
               <li><a href="/agendas" onClick={() => setIsMobileMenuOpen(false)}>Agenda</a></li>
-              <li><a href="/fiestas-mayor" onClick={() => setIsMobileMenuOpen(false)}>Fiestas Mayor</a></li>
-              <li><a href="/festivales" onClick={() => setIsMobileMenuOpen(false)}>Festivales</a></li>
+              <li><a href="/maps-category/fiestas-mayors" onClick={() => setIsMobileMenuOpen(false)}>Fiestas Mayor</a></li>
+              <li><a href="/maps-category/festivales" onClick={() => setIsMobileMenuOpen(false)}>Festivales</a></li>
               <li><a href="/subscriptions" onClick={() => setIsMobileMenuOpen(false)}>Suscripciones</a></li>
               <li className="lang-switch">
                 <button 
