@@ -116,10 +116,10 @@ const Header = () => {
                   <li className={isActive('festivales')}>
                     <a href="/maps-category/festivales">Festivales</a>
                   </li>
-                  {/* <li className={isActive('agendas')}>
+                  <li className={isActive('agendas')}>
                     <a href="/agendas">Agenda</a>
                   </li>
-                   */}
+                  
                   <li className={isActive('subscriptions')}>
                     <a href="/subscriptions">Suscripciones</a>
                   </li>

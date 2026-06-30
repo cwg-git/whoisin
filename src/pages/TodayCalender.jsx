@@ -292,9 +292,7 @@ const TodayCalender = () => {
     <div>
       <div className="post-categories">
         <div className="container">
-          <div className="title-block">
-            <h4 className="border-top">Daily Events by Category</h4>
-          </div>
+          
           <div id="mec_skin_38529" className="mec-wrap colorskin-custom" style={{ display: "unset" }}>
             {categories.map((category, idx) => (
               <CategoryCalendar
