@@ -37,14 +37,45 @@ const Header = () => {
     setSearchText('');
   };
 
+    // Language switcher - in-place translation
   const switchLanguage = (lang) => {
+    const hostname = window.location.hostname;
+    const parts = hostname.split('.');
+    const rootDomain = parts.length > 1 ? '.' + parts.slice(-2).join('.') : hostname;
+
+    const setCookie = (name, value) => {
+      document.cookie = `${name}=${value}; path=/;`;
+      document.cookie = `${name}=${value}; path=/; domain=${hostname};`;
+      if (rootDomain !== hostname) {
+        document.cookie = `${name}=${value}; path=/; domain=${rootDomain};`;
+      }
+    };
+
+    const clearCookie = (name) => {
+      document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+      document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=${hostname};`;
+      if (rootDomain !== hostname) {
+        document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=${rootDomain};`;
+      }
+    };
+
     if (lang === 'es') {
-      window.location.reload();
-      return;
+      clearCookie('googtrans');
+      sessionStorage.removeItem('site_lang');
+      localStorage.removeItem('site_lang');
+    } else {
+      setCookie('googtrans', `/es/${lang}`);
+      sessionStorage.setItem('site_lang', lang);
+      localStorage.setItem('site_lang', lang);
     }
 
-    const translateUrl = `https://translate.google.com/translate?hl=${lang}&sl=es&tl=${lang}&u=${encodeURIComponent(window.location.href)}`;
-    window.location.href = translateUrl;
+    const select = document.querySelector('.goog-te-combo');
+    if (select) {
+      select.value = lang === 'es' ? '' : lang;
+      select.dispatchEvent(new Event('change'));
+    }
+
+    window.location.reload();
   };
 
   return (
