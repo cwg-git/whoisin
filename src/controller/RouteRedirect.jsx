@@ -9,6 +9,7 @@ import Categories from "../pages/Categories";
 import Agendas from "../pages/Agendas";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
+import PrivacyPolicy from "../pages/PrivacyPolicy";
 import CmsPage from "../pages/CmsPage";
 import Festival from "../pages/Festival";
 import FiestasMajor from "../pages/FiestasMajor";
@@ -48,6 +49,7 @@ const RedirectComponent = () => {
     agendas: <Agendas />,
     "about-us": <About />,
     contact: <Contact />,
+    "privacy-policy": <PrivacyPolicy />,
     festival: <Festival />,
     festivales: <Festival />,
     "fiestas-major": <FiestasMajor />,
